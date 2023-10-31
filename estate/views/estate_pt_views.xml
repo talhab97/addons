@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="view_realestate_property_type_tree" model="ir.ui.view">
+
+        <field name="name">estate.property.type.tree</field>
+        <field name="model">estate.property.type</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="properties_id" />
+            </tree>
+        </field>
+
+
+    </record>
+
+    <record id="view_realestate_property_type_form" model="ir.ui.view">
+
+        <field name="name">estate.property.type.form</field>
+        <field name="model">estate.property.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="properties_id"/>
+                        </group>
+                        <group>
+
+                        </group>
+
+                        <notebook>
+                            <page>
+                                <group>
+
+                                </group>
+
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+<!--    <record id="view_realestate_property_type_search" model="ir.ui.view">-->
+
+<!--        <field name="name">estate.property.type.search</field>-->
+<!--        <field name="model">estate.property.type</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <search>-->
+<!--            </search>-->
+<!--        </field>-->
+
+
+<!--    </record>-->
+
+
+    <record id="pt_model_action" model="ir.actions.act_window">
+        <field name="name">Property Types</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">estate.property.type</field>
+        <field name="view_mode">tree,form</field>
+
+        <field name="help" type="html">
+            <p class="o_view_noncontent_smiling_face">
+                Add Anything..!
+            </p>
+        </field>
+
+    </record>
+
+
+    <!--    <data>-->
+    <!--        <record id="any_unique_id" model="your.model">-->
+
+    <!--            <field name="your_field_name">Field Value</field>-->
+
+    <!--            <field name="your_field_name1">1</field>-->
+
+    <!--            <field name="your_field_name2"></field>-->
+
+    <!--        </record>-->
+
+    <!--    </data>-->
+
+</odoo>
